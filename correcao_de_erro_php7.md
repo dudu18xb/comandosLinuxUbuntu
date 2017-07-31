@@ -3,7 +3,7 @@
 Este Comando é referente ao um erro no terminal descrito
 >THE MBSTRING EXTENSION IS MISSING. PLEASE CHECK YOUR PHP CONFIGURATION
 
-*Para instalar basta digitar o seguinte comando no terminal:
+*Para corrigir basta digitar o seguinte comando no terminal:
 >sudo apt-get install php-mbstring php7.0-mbstring php-gettext
 
 *E em seguida execute
