@@ -5,7 +5,7 @@
 > sudo apt-get install lamp-server^
 
 
-### nstalando o phpmyadmin
+### Instalando o phpmyadmin
 > sudo apt-get install phpmyadmin 
 
 
