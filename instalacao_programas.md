@@ -1,4 +1,4 @@
-#comandos linux para instalar arquivos todos os codigos foram testados no Ubuntu 17.10
+## comandos linux para instalar arquivos todos os codigos foram testados no Ubuntu 17.10
 
 
 ### Instalar o pacote completo do LAMP que vem o Apache, Mysql, PHP 7.1 
