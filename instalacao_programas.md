@@ -34,25 +34,40 @@
 
 ### Instalando o phpstorn
 
-- Abaixa o Arquivo no site
+> $ sudo rm -Rf /opt/phpstorm*
 
-- https://www.jetbrains.com/phpstorm/download/#section=linux
 
-- Renomeia o arquivo abaixado para phpstorm.tar.gz
+> $ sudo rm -Rf /usr/bin/phpstorm
 
-- Use o comando a seguir para descompactar o arquivo baixado
 
-> sudo tar vzxf phpstorm.tar.gz -C /opt/
+> $ sudo rm -Rf /usr/share/applications/phpstorm.desktop
 
- - Renomeie a pasta criada. Se ao executar o comando abaixo ocorrer um erro com a mensagem iniciando com “mv: é impossível sobrescrever o não-diretório”, pule este passo
 
-> sudo mv /opt/PhpStorm*/ /opt/phpstorm
+Pronto agora podemos baixar-lo e instala-lo com os seguintes comandos:
+> $ wget https://download.jetbrains.com/webide/PhpStorm-2017.3.tar.gz \ -O phpstorm.tar.gz
 
-- Finalmente, crie um atalho para facilitar a execução do programa
+Descompactando em pasta /opt/:
+> $ sudo tar vzxf phpstorm.tar.gz
 
-> sudo ln -sf /opt/phpstorm/bin/phpstorm.sh /usr/bin/phpstorm
 
-- Se seu ambiente gráfico atual suportar, crie um lançador para o programa, executando o comando abaixo;
+Alterando o nome da pasta:
+> $ sudo mv /opt/PHPStorm*/  /opt/phpstorm
 
-> echo -e '[Desktop Entry]\n Version=1.0\n Name=phpstorm\n Exec=/opt/phpstorm/bin/phpstorm.sh\n Icon=/opt/phpstorm/bin/phpstorm.png\n Type=Application\n Categories=Application' | sudo tee /usr/share/applications/phpstorm.desktop
 
+
+Criando Link simbólico para pasta /usr/bin:
+
+
+> $ sudo ln -sf /opt/phpstorm/bin/phpstorm.sh /usr/bin/phpstorm
+
+
+Criar lançador para o programa:
+
+> $ echo -e '[Desktop Entry]\n Version=1.0\n Name=phpstorm\n \ 
+Exec=/opt/phpstorm/bin/phpstorm.sh\n Icon=/opt/phpstorm/bin/phpstorm.png\n \
+ Type=Application\n Categories=Application' \ 
+| sudo tee /usr/share/applications/phpstorm.desktop
+
+
+Concedendo permissão para executar o lançador:
+> $ sudo chmod +x /usr/share/applications/phpstorm.desktop
