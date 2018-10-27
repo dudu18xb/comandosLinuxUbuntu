@@ -71,3 +71,6 @@ Exec=/opt/phpstorm/bin/phpstorm.sh\n Icon=/opt/phpstorm/bin/phpstorm.png\n \
 
 Concedendo permissão para executar o lançador:
 > $ sudo chmod +x /usr/share/applications/phpstorm.desktop
+
+Entrando no arquivos de Hosts no Ubuntu:
+> $ sudo nano /etc/hosts
